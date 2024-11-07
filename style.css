@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'machina';
+    src: url(./assets/NeueMachina-Light.woff2) format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'machina';
+}
+
+html,
+body,
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: white;
+}
+
+ul {
+    padding-top: 20px;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    width: 50%;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+section {
+    height: 100vh;
+}
+
+.container {
+    padding: 3rem;
+}
+
+.sticky_parent {
+    height: 500vh;
+}
+
+.sticky {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.scroll_section {
+    position: absolute;
+    top: 0;
+    /* height: 100%;
+    width: 500vw; */
+    will-change: transform;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    padding: 0;
+    /* background-color: black; */
+}
+
+img {
+    /* width: auto; */
+    /* height: 100%; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.drtp {
+    width: 50%;
+    float: right;
+}
+
+.rtp {
+    width: auto;
+}
+
+.alt {
+    width: 50%;
+}
+
+/* Large Screen */
+/* @media (min-width: 1440px) {
+    .scroll_section {
+        width: 400vw; /* Adjust if needed */
+/* } */
+/* h1 {
+        font-size: 4.5rem;
+    } */
+/* }  */
+/* Desktop */
+/* @media (min-width: 1024px) {
+    .scroll_section {
+        width: 500vw; /* Adjust as needed */
+/* height: 100%; */
+/* } */
+/* img { */
+/* width: 92vw; */
+/* height: 92%; */
+/* } */
+/* }  */
+/* Tablets */
+/* @media (max-width: 1023px) and (min-width: 768px) {
+    .scroll_section {
+        width: 500vw; 
+        height: 100%;
+    }
+    img {
+        width: 500vw;
+        height: 55%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+
+    li,
+    p {
+        font-size: 1.25rem;
+    }
+
+    p {
+        width: 75%;
+    }
+} */
+
+/* Mobile */
+/* @media (max-width: 767px) { */
+/* 768 Above */
+/* .scroll_section {
+        width: 500vw;
+        height: 100%;
+    }
+    img {
+        width: 500vw;
+        height: 45%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    li,
+    p {
+        font-size: 1rem;
+    }
+
+    p {
+        width: 90%;
+    } */
+/* } */
+/* Small Devices */
+/* @media (max-width: 575px) {
+    .scroll_section {
+        width: 500vw;
+        height: 100%;
+    }
+    img {
+        width: 500vw;
+        height: 25%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    li,
+    p {
+        font-size: 0.9rem;
+    }
+
+    p {
+        width: 95%;
+        margin: 1.5rem 0;
+    }
+    .alert {
+        font-size: 10px;
+    }
+} */
+
+/* @media (max-width: 375px) {
+    .scroll_section {
+        width: 500vw;
+        height: 100%;
+    }
+    img {
+        width: 500vw;
+        height: 20%;
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+    li,
+    p {
+        font-size: 0.85rem;
+    }
+    p {
+        width: 95%;
+    }
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .scroll_section {
+        width: 500vw;
+        height: 100%;
+    }
+    img {
+        width: 500vw;
+        height: 40%;
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+    li,
+    p {
+        font-size: 0.85rem;
+    }
+    p {
+        width: 95%;
+    }
+    .alert {
+        font-size-adjust: 0.3;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .scroll_section {
+        width: 500vw;
+        height: 100%;
+    }
+    img {
+        width: 500vw;
+        height: 50%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+
+    li,
+    p {
+        font-size: 0.9rem;
+    }
+
+    p {
+        width: 95%;
+        margin: 1.5rem 0;
+    }
+    .alert {
+        font-size: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .scroll_section {
+        width: 500vw;
+        height: 100%;
+    }
+    img {
+        width: 500vw;
+        height: 65%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    li,
+    p {
+        font-size: 1rem;
+    }
+
+    p {
+        width: 90%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .scroll_section {
+        width: 500vw; /* Adjust as needed */
+        height: 100%;
+    }
+    img {
+        width: 500vw;
+        height: 90%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .scroll_section {
+        width: 500vw; /* Adjust as needed */
+        height: 100%;
+    }
+    img {
+        width: 500vw;
+        height: 95%;
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
+}
